@@ -31,6 +31,7 @@ public class SplashScreenActivity extends Activity{
 		setContentView(linearLayout);
 		
 		//create the database
+		//check1
 		createDatabase();
 		
 		//splashscreen time

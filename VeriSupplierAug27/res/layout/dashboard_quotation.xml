@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:swipe="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pattern_color"
+            android:orientation="vertical" >
+
+            <com.fortysevendeg.swipelistview.SwipeListView
+                android:id="@+id/vL_QuotationList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="#00000000"
+                android:scrollbars="none"
+                android:visibility="visible"
+                swipe:swipeBackView="@+id/back"
+                swipe:swipeCloseAllItemsWhenMoveList="true"
+                swipe:swipeDrawableChecked="@drawable/choice_selected"
+                swipe:swipeDrawableUnchecked="@drawable/choice_unselected"
+                swipe:swipeFrontView="@+id/front"
+                swipe:swipeMode="left"
+                tools:listitem="@layout/adapter_quotation" />
+
+            <ImageView
+                android:id="@+id/imageViewon"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@raw/menu_icon"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/list_slidermenu"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@color/red"
+            android:choiceMode="singleChoice"
+            android:divider="@color/border_line"
+            android:dividerHeight="1dp"
+            android:scrollbars="none" />
+    </android.support.v4.widget.DrawerLayout>
+
+    <ImageView
+        android:id="@+id/vI_dq_scrollImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/app_name"
+        android:src="@raw/ic_popup_sync_1"
+        android:visibility="gone" />
+
+    <include layout="@layout/tabbottom_layout" />
+
+</LinearLayout>

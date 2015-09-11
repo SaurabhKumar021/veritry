@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="action_bar">#ECECEC</color>
+    <color name="actionbar_text">#333333</color>
+    <color name="home_blue">#005387</color>
+    <color name="home_red">#FF0000</color>
+    <color name="home_green">#99CC33</color>
+    <color name="home_yellow">#FFCC00</color>
+    <color name="home_pink">#Ff0066</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="orange">#FF6600</color>
+    <color name="text_color_gray">#CCCCCC</color>
+    <color name="transparent_black">#000000</color>
+    <color name="grey">#4D4D4D</color>
+    <color name="grey_light">#6E6E6E</color>
+    <color name="pattern_color">#FCFCFD</color>
+    <color name="makepayment_color">#C90000</color>
+    <color name="cancel_color">#DEDEDE</color>
+    <color name="tab_selected">#115E8E</color>
+    <color name="tab_notselected">#C4C4C4</color>
+    <color name="background_title">#4D4D4D</color>
+    <color name="blue">#0707FF</color>
+    <color name="tab_background">#EBEBEB</color>
+    <color name="progressbar">#005387</color>
+    <color name="border_line">#E6E6E6</color>
+    <color name="text_new">#4D4D4D</color>
+    <color name="products_name_background">#C6C6C6</color>
+    <color name="leftmenu_textcolor">#666666</color>
+    <color name="rightmenu_textcolor">#595959</color>
+    <color name="circular_grayborder">#B3B3B3</color>
+    <color name="green">#7BA91D</color>
+    <color name="detailpage_textcolor">#333333</color>
+    <color name="red_textcolor">#FF0000</color>
+    <color name="cost_textcolor">#9D9D9D</color>
+    <color name="verification_selectedcolor">#005387</color>
+    <color name="datetime_blue">#007A87</color>
+    <color name="yellow">#FFCC00</color>
+    <color name="new_green">#4DC98D</color>
+    <color name="placeorder_title_orange">#FF6600</color>
+    <color name="green_new">#4DC98D</color>
+    <color name="sky_blue">#0087BE</color>
+    <color name="price_color">#007A87</color>
+    <color name="prd_viewcolor">#C8C8C8</color>
+    <color name="red_wishlist">#FF5A5F</color>
+    <color name="red">#FF5A5F</color>
+     <color name="green_new1">#007A87</color>
+	<color name="red_new">#ff7f84</color>
+	<color name="light_gray">#55A8A8A8</color>
+
+</resources>

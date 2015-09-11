@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/vL_il_inventorylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:divider="#D2D2D2"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/vI_wh_CreateInventory"
+        android:layout_width="90dp"
+            android:layout_height="90dp"
+             android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@raw/warehouse_icon" />
+
+</RelativeLayout>

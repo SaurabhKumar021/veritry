@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/updateinventory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp" >
+
+        <ImageView
+            android:id="@+id/vI_pui_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="1dp"
+            android:src="@raw/icon_close_dialog" />
+
+        <View
+            android:layout_width="335dp"
+            android:layout_height="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_red1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/vT_pui_warehousetext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/red"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/update_inventory"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="335dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/vT_pui_selectText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/selectwhouse"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/vS_pui_selectSpinner"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/icon_spinner" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="335dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="325dp"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/vT_pui_placetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/stockin"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="100dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/vT_pui_placeQtytext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/vT_pui_placepiecetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/piece"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="335dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="325dp"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/vT_pui_uploadtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/upload"
+                    android:textColor="@color/red_new"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                   android:layout_marginLeft="145dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp" >
+
+                    <EditText
+                        android:id="@+id/vT_pui_uploadQtytext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="1000"
+                        android:inputType="number"
+                        android:textColor="@color/red_new"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/vT_pui_uploadpiecetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/piece"
+                        
+                        android:textColor="@color/red_new"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="335dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="@color/light_gray" />
+
+            <ImageView
+                android:id="@+id/vI_pui_check"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@raw/checkmark" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

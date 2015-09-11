@@ -1,0 +1,270 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomePageActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@color/new_green" >
+
+            <AutoCompleteTextView
+                android:id="@+id/vT_vshp_searchautocomplete"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight=".5"
+                android:background="@android:color/transparent"
+                android:hint="Search Products"
+                android:textColor="@color/text_new"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/vL_vshp_searchlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@raw/search_icon"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vL_HS_qrscan_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/grey"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="start|center"
+                android:text="Scan QR Code"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="end|center"
+                android:layout_marginRight="10dp"
+                android:layout_weight=".1"
+                android:src="@raw/qrcode_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@raw/background" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="130dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@raw/banner_image" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vL_vs_hp_categorytext_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/vT_HS_fcLable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center"
+                    android:padding="3dp"
+                    android:text="@string/str_featured_categories" />
+
+                <TextView
+                    android:id="@+id/vT_HS_viewMoreFC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="end|center"
+                    android:padding="3dp"
+                    android:text="@string/str_view_more"
+                    android:textColor="@color/new_green"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vL_vshp_categorylist_layout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="2dp"
+                android:orientation="horizontal" >
+
+                <com.mmadapps.verisupplier.customs.TwoWayView
+                    android:id="@+id/vL_HS_categoryList"
+                    style="@style/TwoWayView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/text_color_gray"
+                    android:dividerHeight="1dp"
+                    android:drawSelectorOnTop="false" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_vshp_categorydivider"
+                android:layout_width="fill_parent"
+                android:layout_height="2.32dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/dashed_line" />
+
+            <LinearLayout
+                android:id="@+id/vL_HS_linearLayoutFP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/vL_vshp_featurerproducts_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/vT_HS_fpLable"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:padding="3dp"
+                        android:text="@string/str_featured_products" />
+
+                    <TextView
+                        android:id="@+id/vT_HS_viewMoreFP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="end|center"
+                        android:padding="3dp"
+                        android:text="@string/str_view_more"
+                        android:textColor="@color/new_green"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vL_vshp_featurerproductslist_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:orientation="horizontal" >
+
+                    <com.mmadapps.verisupplier.twowaygridview.TwoWayGridView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/vTWG_HS_featuredProductsGrid"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        app:gravity="center"
+                        app:horizontalSpacing="1dp"
+                        app:numColumns="auto_fit"
+                        app:numRows="2"
+                        app:rowHeight="130dp"
+                        app:scrollDirectionLandscape="horizontal"
+                        app:scrollDirectionPortrait="horizontal"
+                        app:stretchMode="columnWidth"
+                        app:verticalSpacing="1dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_vshp_featurerproducts_divider"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@drawable/dashed_line" />
+
+            <LinearLayout
+                android:id="@+id/vL_vshp_manufacturertext_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/vT_HS_manufacturerLable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center"
+                    android:padding="3dp"
+                    android:text="@string/str_manufacturers" />
+
+                <TextView
+                    android:id="@+id/vT_HS_viewMoreMfr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="end|center"
+                    android:padding="3dp"
+                    android:text="@string/str_view_more"
+                    android:textColor="@color/new_green"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vL_AHS_mfrLayout"
+                android:layout_width="match_parent"
+                android:layout_height="350dp" >
+
+                <com.mmadapps.verisupplier.twowaygridview.TwoWayGridView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/vTWG_AHS_manufacturerGrid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:gravity="center"
+                    app:horizontalSpacing="1dp"
+                    app:numColumns="auto_fit"
+                    app:numRows="2"
+                    app:rowHeight="130dp"
+                    app:scrollDirectionLandscape="horizontal"
+                    app:scrollDirectionPortrait="horizontal"
+                    app:stretchMode="columnWidth"
+                    app:verticalSpacing="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/vT_aiqsc_dateTimeText"
+        android:layout_width="fill_parent"
+        
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center"
+        android:text="3.4 PM"
+        android:layout_marginRight="20dp"
+        android:gravity="end"
+        android:textSize="15sp"
+        android:padding="3dp"
+        android:textColor="@color/red_textcolor" />
+
+    <LinearLayout
+        android:id="@+id/vL_aiqsc_rootLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/chat_mfr_red"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/vT_aiqsc_subject"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Subject Text Here..."
+                android:textColor="@color/text_new"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/grey_light" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/vT_aiqsc_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:text="Subject Text Here Subject Text HereSubject Text HereSubject Text HereSubject Text HereSubject Text Here"
+                android:textColor="@color/text_new"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/grey_light" />
+
+        <LinearLayout
+            android:id="@+id/vT_aiqsc_placeto_inspectlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Place to inspect"
+                android:textColor="@color/red_textcolor"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/vT_aiqsc_manufactureName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Manufacture Company Name"
+                android:textColor="@color/text_new"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/vT_aiqsc_manufacture_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Street Address,City"
+                android:textColor="@color/text_new"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_aiqsc_placetoinspect"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/grey_light" />
+
+        <LinearLayout
+            android:id="@+id/vL_aiqsc_additionalinfo_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/vT_aiqsc_inspection_typeofindustrytext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:text="@string/type_industry"
+                    android:textColor="@color/text_new"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/vT_aiqsc_inspection_typeofindustry"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_new"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_aiqsc_industry"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/grey_light" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/vT_aiqsc_inspector_typetext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:text="@string/inspector_type"
+                    android:textColor="@color/text_new"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/vT_aiqsc_inspector_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_new"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_aiqsc_inspector"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/grey_light" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/vT_aiqsc_inspection_typetext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:text="@string/inspection_type"
+                    android:textColor="@color/text_new"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/vT_aiqsc_inspection_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_new"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_aiqsc_inspection"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/grey_light" />
+
+        <LinearLayout
+            android:id="@+id/vL_aiqsc_bestprice_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/vT_aiqsc_bestpriceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Best Price"
+                    android:textColor="@color/text_new"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/vT_aiqsc_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/currency"
+                    android:textColor="@color/red_textcolor"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/vT_aiqsc_bestprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200/"
+                    android:textColor="@color/red_textcolor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/vT_aiqsc_bestprice_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pieces"
+                    android:textColor="@color/text_new"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_aiqsc_attachmentView"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/grey_light" />
+
+        <LinearLayout
+            android:id="@+id/vL_aiqsc_document_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/vT_aiqsc_documentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attachment"
+                android:textColor="@color/red_textcolor"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:visibility="visible" >
+
+                <com.mmadapps.verisupplier.customs.TwoWayView
+                    android:id="@+id/vL_aiqsc_document_list"
+                    style="@style/TwoWayView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/text_color_gray"
+                    android:dividerHeight="1dp"
+                    android:drawSelectorOnTop="false" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vL_aiqsc_responce_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/vT_aiqsc_acceptButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_green"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="ACCEPT"
+                android:textColor="@color/green" />
+
+            <TextView
+                android:id="@+id/vT_aiqsc_rejectButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_red"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="REJECT"
+                android:textColor="@color/red_textcolor" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

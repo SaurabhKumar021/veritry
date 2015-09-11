@@ -1,0 +1,319 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".HomePageActivityNew" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:minHeight="80dp"
+                android:src="@raw/banner_1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/vT_HS_fcLable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="start|center"
+            android:padding="3dp"
+            android:text="@string/str_featured_categories" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="150dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/vL_AHS_relativeLayoutFC1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_background_gray"
+                android:minHeight="50dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/vI_AHS_productImage11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/vT_AHS_productName11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/new_green"
+                    android:gravity="start|center"
+                    android:maxLines="1"
+                    android:padding="3dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/vL_HS_linearlayoutFC"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/vL_AHS_relativeLayoutFC2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_background_gray"
+                    android:minHeight="80dp"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/vI_AHS_productImage21"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/vT_AHS_productName22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/new_green"
+                        android:gravity="start|center"
+                        android:maxLines="1"
+                        android:padding="3dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/vL_AHS_relativeLayoutFC3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_background_gray"
+                    android:minHeight="80dp"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/vI_AHS_productImage31"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/vT_AHS_productName32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/new_green"
+                        android:gravity="start|center"
+                        android:maxLines="1"
+                        android:padding="3dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/vL_AHS_relativeLayoutFC4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_background_gray"
+                    android:minHeight="80dp"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/vI_AHS_productImage41"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/vT_AHS_productName42"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/new_green"
+                        android:gravity="start|center"
+                        android:maxLines="1"
+                        android:padding="3dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/vT_HS_viewMoreFC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="end|center"
+            android:padding="3dp"
+            android:text="@string/str_view_more"
+            android:textColor="@color/new_green"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/dashed_line" />
+
+        <TextView
+            android:id="@+id/vT_HS_fpLable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="start|center"
+            android:padding="3dp"
+            android:text="@string/str_featured_products" />
+
+        <LinearLayout
+            android:id="@+id/vL_HS_linearLayoutFP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:minHeight="80dp"
+                android:src="@raw/banner_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/vL_AHS_relativeLayoutFP1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_background_gray"
+                    android:minHeight="80dp"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/vI_AHS_productImage51"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/vT_AHS_productName52"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/new_green"
+                        android:gravity="start|center"
+                        android:maxLines="1"
+                        android:padding="3dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/vL_AHS_relativeLayoutFP2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_background_gray"
+                    android:minHeight="80dp"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/vI_AHS_productImage61"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/vT_AHS_productName62"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/new_green"
+                        android:gravity="start|center"
+                        android:maxLines="1"
+                        android:padding="3dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/vT_HS_viewMoreFP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="end|center"
+            android:padding="3dp"
+            android:text="@string/str_view_more"
+            android:textColor="@color/new_green"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/dashed_line" />
+
+        <TextView
+            android:id="@+id/vT_HS_manufacturerLable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="start|center"
+            android:padding="3dp"
+            android:text="@string/str_manufacturers" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp" >
+
+            <GridView
+                android:id="@+id/vG_AHS_manufacturerGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="2dp"
+                android:minHeight="100dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/vT_HS_viewMoreMfr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="end|center"
+            android:padding="3dp"
+            android:text="@string/str_view_more"
+            android:textColor="@color/new_green"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

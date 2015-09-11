@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:id="@+id/vL_actionbar_home"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/vI_ab_homeselected"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@raw/home_selected"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/vI_ab_home_notselected"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@raw/home_gray"
+            android:contentDescription="@string/app_name"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vL_actionbar_wishlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/vI_ab_wish_notselected"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@raw/wishlist_new"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/vI_ab_wishselected"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@raw/wishlist_red"
+            android:contentDescription="@string/app_name"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vL_actionbar_dashboard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/vI_ab_dashboard_notselected"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@raw/message_new_2"
+            android:contentDescription="@string/app_name"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/vI_ab_dashboardselected"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@raw/dashboard_selected"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vL_actionbar_openquote"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/vI_ab_openquote_notselected"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:background="@raw/openquote"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/vI_ab_openquoteselected"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:background="@raw/openquote_selected"
+            android:contentDescription="@string/app_name"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vL_actionbar_profile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/vI_ab_user_notselected"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:background="@raw/profile"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/vI_ab_userselected"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:background="@raw/user_selected"
+            android:contentDescription="@string/app_name"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

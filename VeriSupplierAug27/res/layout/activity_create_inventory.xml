@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollViewact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:orientation="vertical" >
+
+           <LinearLayout
+                android:id="@+id/vL_ni_layoutselprod"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/vT_ni_selectprodText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="#FE2E2E"
+                    android:text="@string/sel_prod"
+                    android:textSize="15sp" />
+
+            
+                <Spinner
+                    android:id="@+id/vS_ni_selectSpinner"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_spinner" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D6D6D6" />
+
+            <EditText
+                android:id="@+id/vE_ni_warehousename"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:hint="Product Name"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D6D6D6" />
+
+            <EditText
+                android:id="@+id/vE_ni_qty"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:hint="Quantity"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D6D6D6" />
+
+            <LinearLayout
+                android:id="@+id/vL_ni_layoutselware"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/vT_ni_selectwareText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/selectwarehouse"
+                    android:textSize="15sp" />
+
+                
+                <Spinner
+                    android:id="@+id/vS_ni_wareSpinner"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_spinner" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D6D6D6" />
+
+            <TextView
+                android:id="@+id/vT_ni_prophoto"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Product Photo"
+                android:textColor="#FE2E2E"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D6D6D6" />
+
+            <ListView
+                android:id="@+id/vL_ni_photoname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/vI_ni_checkmark"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:src="@raw/checkmark" />
+
+</LinearLayout>

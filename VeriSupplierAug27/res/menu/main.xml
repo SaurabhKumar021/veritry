@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:myapp="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/phone"
+        android:icon="@raw/home"
+        android:title="@string/home"
+        myapp:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/computer"
+        android:icon="@raw/notification"
+        android:title="@string/home"
+        myapp:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/gamepad"
+        android:icon="@raw/notification"
+        android:title="@string/home"
+        myapp:showAsAction="ifRoom|withText"/>
+
+</menu>

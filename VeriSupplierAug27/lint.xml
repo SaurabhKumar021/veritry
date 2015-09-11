@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ClickableViewAccessibility">
+        <ignore path="src/com/mmadapps/verisupplier/BaseActionBarActivity.java" />
+    </issue>
+    <issue id="InflateParams">
+        <ignore path="src/com/mmadapps/verisupplier/customservices/CustomQuotatinBuyerChatDetails.java" />
+        <ignore path="src/com/mmadapps/verisupplier/customservices/CustomQuotationManufacturerChatDetails.java" />
+        <ignore path="src/com/mmadapps/verisupplier/dashboard/DashboardActivity.java" />
+        <ignore path="src/com/mmadapps/verisupplier/dashboard/ProductQuotationBuyerDetailActivity.java" />
+        <ignore path="src/com/mmadapps/verisupplier/dashboard/QuotationDetailsBuyerActivity.java" />
+        <ignore path="src/com/mmadapps/verisupplier/details/ProductDetailsActivity.java" />
+        <ignore path="src/com/mmadapps/verisupplier/inspection/InspectionBuyerChatDetailsActivity.java" />
+        <ignore path="src/com/mmadapps/verisupplier/inspection/InspectionManufacturerChatDetails.java" />
+        <ignore path="src/com/mmadapps/verisupplier/shipping/ShippingBuyerChatDetailsActivity.java" />
+        <ignore path="src/com/mmadapps/verisupplier/shipping/ShippingManufactureChatDetailsActivity.java" />
+        <ignore path="src/com/mmadapps/verisupplier/warehouse/WarehouseBuyerChatDetailsActivity.java" />
+        <ignore path="src/com/mmadapps/verisupplier/warehouse/WarehouseManufacturerChatDetailsActivity.java" />
+    </issue>
+    <issue id="SdCardPath">
+        <ignore path="src/com/mmadapps/verisupplier/background/Helper.java" />
+    </issue>
+    <issue id="SimpleDateFormat">
+        <ignore path="src/com/mmadapps/verisupplier/MarketPageActivity.java" />
+        <ignore path="src/com/mmadapps/verisupplier/UserOTPpopup.java" />
+        <ignore path="src/com/mmadapps/verisupplier/UserSignPopup.java" />
+        <ignore path="src/com/mmadapps/verisupplier/background/Helper.java" />
+        <ignore path="src/com/mmadapps/verisupplier/dashboard/DashboardActivity.java" />
+        <ignore path="src/com/mmadapps/verisupplier/details/ProductDetailsActivity.java" />
+        <ignore path="src/com/mmadapps/verisupplier/login/LoginEmailActivity.java" />
+        <ignore path="src/com/mmadapps/verisupplier/me/UserMeActivity.java" />
+    </issue>
+    <issue id="TrulyRandom">
+        <ignore path="src/com/mmadapps/verisupplier/customs/Encrypt.java" />
+    </issue>
+    <issue id="ViewHolder">
+        <ignore path="src/com/mmadapps/verisupplier/details/MoreInfoActivity.java" />
+    </issue>
+    <issue id="WrongCall" severity="ignore" />
+</lint>

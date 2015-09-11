@@ -1,0 +1,197 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="70dp"
+          android:background="@color/green_new1"
+          
+         android:orientation="horizontal" >
+         
+         <ImageView
+             android:id="@+id/vI_ir_logo"
+             android:layout_width="70dp"
+             android:layout_height="70dp"
+             android:paddingLeft="5dp"
+             android:layout_weight="0.3"
+             android:src="@raw/intel_stick"
+            />
+         
+        <LinearLayout
+            android:layout_width="225dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.23"
+            android:orientation="vertical"
+            android:paddingLeft="5dp" >
+
+             <TextView
+                 android:id="@+id/vT_id_producttext"
+                 android:layout_width="211dp"
+                 android:layout_height="wrap_content"
+                 android:paddingTop="10dp"
+                 android:text="@string/product_name"
+                 android:textColor="@color/white"
+                 android:textSize="14sp" />
+              
+              <TextView
+                 android:id="@+id/vT_id_mCompanyNametext"
+                 android:layout_width="211dp"
+                 android:layout_height="wrap_content"
+                
+                 android:text="@string/mcompany_name"
+                 android:textColor="@color/white"
+                 android:textSize="14sp" />
+              
+            <LinearLayout
+            android:layout_width="225dp"
+            android:layout_height="18dp"
+            android:orientation="horizontal"
+            android:paddingLeft="0dp" >
+              
+               <TextView
+                 android:id="@+id/vT_id_stockQtytext"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/stock_qty"
+                 android:textColor="@color/white"
+                 android:textSize="14sp" />
+               <View
+                 android:layout_width="5dp"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="center"
+                  />
+               
+               <TextView
+                 android:id="@+id/vT_id_Qtytext"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/qty"
+                 android:textColor="@color/white"
+                 android:textSize="14sp" />
+               
+               <TextView
+                 android:id="@+id/vT_id_piecetext"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/piece"
+                 android:textColor="@color/white"
+                 android:textSize="14sp" />
+            </LinearLayout>
+             </LinearLayout>
+
+         <ImageView
+             android:id="@+id/vI_id_arrow"
+             android:layout_width="0dp"
+             android:layout_height="20dp"
+             android:src="@raw/arrow_white"
+             android:layout_gravity="right|center" 
+             android:layout_weight="1"/>
+             
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="257dp"
+         android:orientation="vertical"
+         android:paddingLeft="5dp" >
+
+         <TextView
+             android:id="@+id/vT_id_warehousetext"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingLeft="10dp"
+             android:paddingTop="10dp"
+             android:text="@string/warehouse"
+             android:textColor="@color/red_new"
+             android:textSize="16sp" />
+
+         <View
+             android:layout_width="335dp"
+             android:layout_height="2dp"
+             android:layout_gravity="center"
+             android:background="@color/light_gray" />
+
+         <ScrollView
+             android:layout_width="fill_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:fillViewport="true" >
+
+             <ListView
+                 android:id="@+id/vL_inventorywarehouseList"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent" >
+             </ListView>
+
+         </ScrollView>
+
+         <View
+             android:layout_width="335dp"
+             android:layout_height="2dp"
+             android:layout_gravity="center"
+             android:background="@color/light_gray" />
+
+         <LinearLayout
+             android:layout_width="325dp"
+             android:layout_height="40dp"
+             android:orientation="horizontal"
+             android:paddingLeft="10dp"
+             android:paddingTop="10dp" >
+
+             <TextView
+                 android:id="@+id/vT_id_totalinqtytext"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:paddingRight="98dp"
+                 android:text="@string/total_qty"
+                 android:textColor="@color/red_new"
+                 android:textSize="14sp"
+                 android:textStyle="bold" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="40dp"
+                 android:gravity="right"
+                 android:orientation="horizontal"
+                 android:paddingTop="5dp" >
+
+                 <TextView
+                     android:id="@+id/vT_id_totalQtytext"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="1000"
+                     android:textSize="14sp" />
+
+                 <TextView
+                     android:id="@+id/vT_id_totalunittext"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/piece"
+                     android:textSize="14sp" />
+             </LinearLayout>
+         </LinearLayout>
+
+         <View
+             android:layout_width="335dp"
+             android:layout_height="2dp"
+             android:layout_gravity="center"
+             android:background="@color/light_gray" />
+     </LinearLayout>
+
+      <Button
+          android:id="@+id/vB_id_updateButton"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="10dp"
+          android:background="@drawable/border_red1"
+          android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"
+          android:gravity="center"
+          android:text="@string/update_inventory"
+          android:textColor="@color/red_new" 
+         />
+        
+     </LinearLayout>
+

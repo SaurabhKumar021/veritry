@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/vL_POA_titleLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_wishlist"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/vT_POA_shippingCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@raw/placeorder_shipping"
+            android:gravity="center"
+            android:text="@string/shipping_address"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <!-- <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@raw/line_gray" /> -->
+
+        <TextView
+            android:id="@+id/vT_POA_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@raw/placeorder_address_white"
+            android:gravity="center"
+            android:text="@string/address"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <!-- <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@raw/line_orange" /> -->
+
+        <TextView
+            android:id="@+id/vT_POA_paymentS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@raw/placeorder_payment"
+            android:gravity="center"
+            android:text="@string/payment"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vL_POA_titleLayout"
+        android:layout_marginBottom="52dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:id="@+id/vL_POA_addressLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Billing address"
+                    android:textColor="@color/detailpage_textcolor"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_background_gray_square"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/vT_POA_customerName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="@color/detailpage_textcolor"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vT_POA_customerAddress1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="@color/detailpage_textcolor"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/vT_POA_customerAddress2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="@color/detailpage_textcolor"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vL_POA_changeAddressLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/vT_POA_changeAddress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@color/red_wishlist"
+                        android:gravity="center"
+                        android:text="Change Address"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vL_POA_addressNewLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:text="Billing address New" />
+
+                <EditText
+                    android:id="@+id/vE_POA_firstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/custom_background_gray_square"
+                    android:ems="10"
+                    android:hint="  First name"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/vE_POA_lastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/custom_background_gray_square"
+                    android:ems="10"
+                    android:hint="  Last name"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/vE_POA_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/custom_background_gray_square"
+                    android:ems="10"
+                    android:hint="  Email"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/vE_POA_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/custom_background_gray_square"
+                    android:ems="10"
+                    android:hint="  Company"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/vE_POA_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/custom_background_gray_square"
+                    android:ems="10"
+                    android:hint="  Country"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/vE_POA_province"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/custom_background_gray_square"
+                    android:ems="10"
+                    android:hint="  State / province"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/vE_POA_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/custom_background_gray_square"
+                    android:ems="10"
+                    android:hint="  City"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/vE_POA_address1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/custom_background_gray_square"
+                    android:ems="10"
+                    android:hint="  Address 1"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/vE_POA_address2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/custom_background_gray_square"
+                    android:ems="10"
+                    android:hint="  Address 2"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/vE_POA_zip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/custom_background_gray_square"
+                    android:ems="10"
+                    android:hint=" Zip / postal code"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/vE_POA_phoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/custom_background_gray_square"
+                    android:ems="10"
+                    android:hint="  Phone number"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/vE_POA_faxNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/custom_background_gray_square"
+                    android:ems="10"
+                    android:hint="  Fax number"
+                    android:padding="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/vL_POA_nextButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/vT_POA_buttonNext"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/red_wishlist"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dimen_margin_top_homestr"
+    android:background="@drawable/custom_background_gray" >
+
+    <ImageView
+        android:id="@+id/vI_AHS_productImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_background_gray"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/vT_AHS_productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/new_green"
+        android:gravity="start|center"
+        android:maxLines="1"
+        android:padding="@dimen/dimen_padding_homestr" />
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@raw/background" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/vT_atm_alerttext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Alert"
+        android:textSize="18sp"
+        android:textColor="@color/new_green" />
+
+    <ListView
+        android:id="@+id/vL_atm_alertList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/white"
+        android:dividerHeight="4dp"
+        tools:listitem="@layout/alert_view" >
+    </ListView>
+    
+    <TextView
+        android:id="@+id/vT_atm_alertseemoretext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="right"
+        android:textSize="18sp"
+        android:text="see more.."
+        android:textColor="@color/new_green" />
+    
+    <TextView
+        android:id="@+id/vT_atm_ordertext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="left"
+        android:textSize="18sp"
+        android:text="Orders"
+        android:textColor="@color/new_green" />
+    
+     <ListView
+        android:id="@+id/vL_atm_orderList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/white"
+        android:dividerHeight="4dp"
+        tools:listitem="@layout/tradeorder_view" >
+    </ListView>
+    
+      <TextView
+        android:id="@+id/vT_atm_orderseemoretext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="right"
+        android:textSize="15sp"
+        android:text="see more.."
+        android:textColor="@color/new_green" />
+      
+      <TextView
+        android:id="@+id/vT_atm_invertorytext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="left"
+        android:textSize="18sp"
+        android:text="Inventory"
+        android:textColor="@color/new_green" />
+      
+      <ListView
+        android:id="@+id/vL_atm_inventoryList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/white"
+        android:dividerHeight="4dp"
+        tools:listitem="@layout/tradeorder_view" >
+    </ListView>
+    
+      <TextView
+        android:id="@+id/vT_atm_inventoryseemoretext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="right"
+        android:textSize="18sp"
+        android:text="see more.."
+        android:textColor="@color/new_green" />
+</LinearLayout>
+</ScrollView>

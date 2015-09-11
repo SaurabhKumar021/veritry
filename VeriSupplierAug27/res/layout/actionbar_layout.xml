@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/action_bar"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/action_leftmenu_layout"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@raw/menu"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/action_back_layout"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:background="@raw/arrow_back"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vL_title_layout"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/action_titel_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/rightmenu_textcolor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vL_search_layout"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="4"
+        android:background="@color/white"
+        android:gravity="center|right"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/selectTitel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/search"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black"
+            android:visibility="visible" />
+
+       <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:visibility="gone" >
+        </SearchView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/action_rightmunu_layout"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:gravity="center|right"
+        android:paddingRight="15dp" >
+
+        <ImageView
+            android:id="@+id/vI_PD_qrscan"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@raw/qrcode_icon"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+</LinearLayout>

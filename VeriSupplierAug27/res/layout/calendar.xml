@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:id="@+id/calendar_header"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/previous_month"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="40dp"
+            android:contentDescription="@string/app_name"
+            android:drawableLeft="@raw/ic_navi_left" />
+
+        <TextView
+            android:id="@+id/current_month"
+            android:layout_width="0dip"
+            android:layout_height="45sp"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/next_month"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="40dp"
+            android:drawableLeft="@raw/ic_navi_right"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cal_back"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/calendar_header"
+        android:layout_marginTop="10dp"
+        android:background="@raw/cal_days_green"
+        android:orientation="horizontal" >
+    </LinearLayout>
+    
+    
+    <GridView
+        android:id="@+id/calendar_days_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cal_back"
+        android:layout_marginTop="5dp"
+        
+        android:background="@android:color/white"
+        android:horizontalSpacing="1dp"
+        android:numColumns="7"
+        android:stretchMode="columnWidth" />
+    
+
+    <ViewSwitcher
+        android:id="@+id/calendar_switcher"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/calendar_days_grid" >
+
+        <GridView
+            android:id="@+id/calendar_grid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:horizontalSpacing="1dp"
+            android:numColumns="7"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1dp" />
+    </ViewSwitcher>
+    
+   
+
+    <TextView
+        android:id="@+id/NoteMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note:Tap outside after selecting the date"
+        android:textColor="@color/red" />
+
+</RelativeLayout>

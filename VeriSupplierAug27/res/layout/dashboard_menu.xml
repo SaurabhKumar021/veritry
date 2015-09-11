@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:layout_marginEnd="5dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginStart="20dp"
+    android:background="@drawable/icon_menu"
+    android:gravity="end"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/vL_menu_QuotesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/vT_viewQuotes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@raw/icon_menu_quotes_w"
+            android:drawablePadding="15dp"
+            android:gravity="start|center"
+            android:text="@string/view_quotes"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/vL_menuPriceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/vT_priceRequests"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@raw/icon_menu_price_w"
+            android:drawablePadding="15dp"
+            android:gravity="start|center"
+            android:text="@string/view_price"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+  
+
+    <LinearLayout
+        android:id="@+id/vL_moreInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/vT_moreInfoRequests"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@raw/icon_menu_mi_w"
+            android:drawablePadding="23dp"
+            android:gravity="start|center"
+            android:text="@string/view_moreinfo"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/vL_orderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/vT_orderList"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@raw/icon_menu_order_w"
+            android:drawablePadding="20dp"
+            android:gravity="start|center"
+            android:text="@string/view_order"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

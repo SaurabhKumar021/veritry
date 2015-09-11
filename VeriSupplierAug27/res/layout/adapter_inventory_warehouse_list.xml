@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/vT_warehousename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Warehouse"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_weight="1"
+        
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/vT_availablequantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1234556" />
+
+        <TextView
+            android:id="@+id/vT_availableproductunit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" / piece" />
+
+    </LinearLayout>
+
+</LinearLayout>

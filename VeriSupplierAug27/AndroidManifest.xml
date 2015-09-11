@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mmadapps.verisupplier"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <meta-data
+                    android:name="android.support.UI_OPTIONS"
+                    android:value="splitActionBarWhenNarrow" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="MarketHomeScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="HomePageActivityNew"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="HomePageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAx8XKAj35CyQ9SClpWP7UhYu2bILqI2K4" />
+        <!-- AIzaSyBediu7q38eO0m_2jkZegzDsfzZkCgGMQI -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="BaseActionBarActivity"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name="BaseFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".homepage.ManufacturarActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".details.ManufacturerDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".details.MoreInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".details.ProductDescription"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".details.Productdetails"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".fileattachment.FileExplorer"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".homepage.AllCategoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".homepage.FeaturedProductsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.placeorder.PlaceorderAddress"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.placeorder.PlaceorderPayment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.placeorder.PlaceorderShipping"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".leftmenu.WishListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".details.GetQuotationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".details.NewFeedbackActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.NotificationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.leftmenu.DashboardActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.UserLoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.UserOTPpopup"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.UserRegistrationPopup"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.UserSignPopup"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.UserRegistrationPopupNew"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.leftmenu.Myopenquoate"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.leftmenu.GalleryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.leftmenu.ProdGridActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.TradeManagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.TradeManagerOrderActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.TradeChannelActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.leftmenu.QuotationActionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.leftmenu.QuotationDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.TradeOrderDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.TradeWarehouseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.TradeCreateWarehouseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.TradeManagerListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.search.SearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.placeorder.PaymentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.placeorder.MakePaymentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.details.GetQuotationActivityNew"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.details.ManufacturerDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.search.SearchActivityNew"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.details.ProductDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.dashboard.DashboardActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.dashboard.QuotationDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.dashboard.ReplyDialog"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisuppliernew.products.ProductListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.MarketPageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisuppliernew.products.ServiceListClassActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.customs.TabBottomActionBarActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.dashboard.DashboardOrderActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.dashboard.DashboardGetPriceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.shipping.ShippingCreateQuotation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.inspection.InspectionCreateQuotation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.customservices.CustomCreateQuotation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.warehouse.WarehouseCreateQuotation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.dashboard.ProductQuotationBuyerDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.dashboard.ProductQuotationManufacturerDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.calendar.CalendarDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.shipping.ShippingUpdateQuotationBuyer"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.shipping.ShippingBuyerChatDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.shipping.ShippingManufactureChatDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.inspection.InspectionBuyerChatDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.inspection.InspectionManufacturerChatDetails"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.customservices.CustomQuotatinBuyerChatDetails"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.customservices.CustomQuotationManufacturerChatDetails"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.warehouse.WarehouseBuyerChatDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.warehouse.WarehouseManufacturerChatDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.AlertDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.ChannellistActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.CreateChannelActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.CreateWareHouseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.DashboardActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.Fulfilpopup"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.InventoryDetails"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.InventorylistActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.Inventorypopup"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.OrderActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.OrderListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.Popupdashboard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.Selectwarehousepopup"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.TradeAlertActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.WarehouselistActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.trademanager.Warehousepopup"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.products.ProductCreateQuotationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.details.MoreInfoActivityNew"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.customs.BottomBarActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.me.UserMeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.shipping.PlaceOrderShippingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.customservices.PlaceOrderCustomsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.inspection.PlaceOrderInspectionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.warehouse.PlaceOrderWarehouseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.login.LoginEmailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.login.SigninPageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.placeorder.MakePaymentNewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.details.UserFeedBackPopupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog" >
+        </activity>
+        <activity
+            android:name="com.citrus.sdk.CitrusActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_citrus"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.customservices.CustomOrderDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.inspection.InspectionOrderDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.shipping.ShippingOrderDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.warehouse.WarehouseOrderDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mmadapps.verisupplier.products.PlaceOrderProductActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.mmadapps.verisupplier.products.ProductOrderDetailsActivity"
+             android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

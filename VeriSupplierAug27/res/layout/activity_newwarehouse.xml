@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@raw/background" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Create Warehouse"
+            android:textColor="@color/green_new"
+            android:textSize="18sp" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:background="@raw/edit_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp">
+        
+        <EditText 
+            android:id="@+id/vE_anwh_warehousename"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Ware House Name|"
+            android:padding="10dp"
+             android:textSize="15sp"
+            android:textColor="@color/leftmenu_textcolor"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:background="@raw/edit_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+        
+        <EditText 
+            android:id="@+id/vE_anwh_warehousestreetaddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Street address|"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/leftmenu_textcolor"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+        
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:background="@raw/edit_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+        
+        <EditText 
+            android:id="@+id/vE_anwh_warehousecity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="City|"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/leftmenu_textcolor"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:background="@raw/edit_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+        
+        <EditText 
+            android:id="@+id/vE_anwh_warehousezipcode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Zip / postal code|"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/leftmenu_textcolor"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:background="@raw/edit_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+        
+        <EditText 
+            android:id="@+id/vE_anwh_warehousecountry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Country|"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/leftmenu_textcolor"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:background="@raw/edit_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+        
+        <EditText 
+            android:id="@+id/vE_anwh_warehousestate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="State / province|"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/leftmenu_textcolor"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+    
+     </LinearLayout>
+    
+      <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical"
+       android:gravity="center"
+        android:background="@color/new_green"
+        android:layout_marginTop="10dp">
+     
+          <TextView 
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="Save Warehouse"
+              android:textColor="@color/white"
+              android:textSize="20sp"
+              android:gravity="center"/>
+        
+          </LinearLayout>
+
+</LinearLayout>

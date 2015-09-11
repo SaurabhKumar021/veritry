@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vL_sw_mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/vI_aop_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|right"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:src="@raw/icon_close_dialog" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="0dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:paddingBottom="20dp" >
+
+        <TextView
+            android:id="@+id/vT_pui_warehousetext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/red"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="@string/heading"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="335dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:background="@color/light_gray" />
+
+        <LinearLayout
+            android:layout_width="325dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/vT_aop_placetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/requirement"
+                android:textColor="@color/red"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/vT_sw_requirementQtytext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qty"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/vT_aop_placepiecetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/piece"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="335dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/light_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:paddingLeft="0dp" >
+
+            <TextView
+                android:id="@+id/vT_aop_selectText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/chennai"
+                android:visibility="gone"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/vS_sw_selectWareHouse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/icon_spinner" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="335dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/light_gray" />
+
+        <LinearLayout
+            android:layout_width="325dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/vT_sw_stockinwh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/stockin"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/vT_sw_placeQtytext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qty"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/vT_sw_unittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/piece"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="335dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/light_gray" />
+
+        <LinearLayout
+            android:id="@+id/vL_sw_edittext"
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border_red1"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/vT_aop_addQtytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/addqty"
+                android:textColor="@color/red"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/vE_aop_addqty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:gravity="right|center"
+                android:hint="50"
+                android:inputType="number"
+               
+                android:textColor="@color/black" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vL_aop_afteradd"
+            android:layout_width="325dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="325dp"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/vT_aop_adqtytext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/addqty"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/vT_aop_adqty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/qty"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/vT_aop_adpiecetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/piece"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="335dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1.6"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Do you wish to add "
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/vT_aop_doyouadd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2000"
+                        android:textColor="@color/red_textcolor"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="quantity"
+                        android:textColor="@color/red_textcolor"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="from "
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/vT_sw_addwarehousetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chennai"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/vT_aop_addplace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" warehouse?"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/vI_pui_check"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@raw/checkmark" />
+    </LinearLayout>
+
+</LinearLayout>

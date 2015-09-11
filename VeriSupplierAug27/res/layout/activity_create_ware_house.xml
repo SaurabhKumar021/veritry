@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/vT_nw_warehousenameText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="New WarehouseName"
+                android:textColor="#FE2E2E"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D6D6D6" />
+
+            <EditText
+                android:id="@+id/vE_acwh_warehousename"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:hint="Warehouse Name"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColorHint="#D8D8D8" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D6D6D6" />
+
+            <TextView
+                android:id="@+id/vT_nw_addressText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Address"
+                android:textColor="#FE2E2E"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D6D6D6" />
+
+            <EditText
+                android:id="@+id/vE_acwh_street"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:hint="Street"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColorHint="#D8D8D8" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D6D6D6" />
+
+            <EditText
+                android:id="@+id/vE_acwh_city"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:hint="City"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColorHint="#D8D8D8" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D6D6D6" />
+
+            <EditText
+                android:id="@+id/vE_acwh_country"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:hint="Country"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColorHint="#D8D8D8" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D6D6D6" />
+
+            <EditText
+                android:id="@+id/vE_acwh_web"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:hint="Web"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColorHint="#D8D8D8" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D6D6D6" />
+
+            <TextView
+                android:id="@+id/vT_nw_warehousephotoText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Warehouse Photo"
+                android:textColor="#FE2E2E"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D6D6D6" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:id="@+id/vL_cc_warehouse_logo"/>
+
+            <ImageView
+                android:id="@+id/vI_acwh_checkmark"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="40dp"
+                android:src="@raw/checkmark" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

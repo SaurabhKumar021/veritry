@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vL_ufpu_mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_red"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Give Your Rating"
+        android:textColor="@color/price_color"
+        android:textSize="18sp" />
+
+    <RatingBar
+        android:id="@+id/rb_fbf_userRating"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginLeft="15dp"
+        android:isIndicator="false"
+        android:progressDrawable="@drawable/ratingbar_withborder" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Give Your Feedback"
+        android:textColor="@color/price_color"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/vT_fbf_userfeedback"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/custom_background_darkgray"
+        android:gravity="start|top"
+        android:hint="Write you feedback"
+        android:minHeight="150dp"
+        android:padding="5dp"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/vT_fbf_feedbacksubmit"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/red_wishlist"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/submit"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

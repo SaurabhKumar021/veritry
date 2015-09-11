@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VeriSupplier</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- ActionBar -->
+    <string name="search">Search</string>
+    <string name="application_name">www.verisupplier.com</string>
+
+    <!-- LeftMenu -->
+    <string name="get_open_qoute">My Open Quote</string>
+    <string name="home">Home</string>
+    <string name="my_verisupplier">My VeriSupplier</string>
+    <string name="wish_list">Wish List</string>
+    <string name="messages">Messages</string>
+    <string name="setting">Setting</string>
+    <string name="app_feedback">App Feedback</string>
+    <string name="online_support">Online Support</string>
+    <string name="help_center">Help Center</string>
+    <string name="about_us">About Us</string>
+    <string name="qr_scaner">QRCode Scaner</string>
+    <string name="left_menu_username">User Name</string>
+    <string name="sign_in">Sign In</string>
+    <string name="trade_manager">Trade Manager</string>
+
+    <!-- RightMenu -->
+    <string name="business_identity">Business Identity</string>
+    <string name="trade_assurance">Trade Assurance</string>
+    <string name="e_creditline">e-Credit Line</string>
+    <string name="inspection_service">Inspection Services</string>
+    <string name="sing_out">Sign Out</string>
+
+    <!-- homePage -->
+    <string name="category_text">All Categories</string>
+    <string name="featured_text">Featured Products</string>
+    <string name="newarrival_text">New Arrivals</string>
+    <string name="enquirenow_text">Enquire Now</string>
+    <string name="qualitypicks_text">Quality Picks</string>
+    <string name="manufacturer_text">Manufacturer</string>
+    <string name="verifiedmanufacturer_text">Verified Manufacturer</string>
+    <string name="product_name">Product Name</string>
+    <string name="related_text">Related Products</string>
+
+    <!-- product details page -->
+    <string name="get_price">Get Price</string>
+    <string name="more_info">More Info</string>
+    <string name="get_quotation">Get Quotation</string>
+    <string name="place_order">Place Order</string>
+    <string name="quick_details">Quick Details</string>
+    <string name="shipping_cost">Shipping Cost:</string>
+    <string name="processing_time">Processing Time:</string>
+    <string name="Specification">Specifications</string>
+    <string name="feedback">Average Rating</string>
+    <string name="avg_starrating">Average Star Rating</string>
+    <string name="one_star">1 Stars</string>
+    <string name="two_star">2 Stars</string>
+    <string name="three_star">3 Stars</string>
+    <string name="four_star">4 Stars</string>
+    <string name="five_star">5 Stars</string>
+    <string name="websites">Websites</string>
+
+    <!-- manufacturer details -->
+    <string name="basic_info">Basic Information</string>
+    <string name="business_type">Business Type</string>
+    <string name="year_establish">Year Established</string>
+    <string name="no_employee">No. of Employees</string>
+    <string name="tarde_market">Trade &amp; Market:</string>
+    <string name="country_bulet">\*</string>
+
+    <!-- stepone -->
+    <string name="step_one">Step 1</string>
+    <string name="step_two">Step 2</string>
+    <string name="step_three">Step 3</string>
+    <string name="step_four">Step 4</string>
+    <string name="step_five">Step 5</string>
+    <string name="orderinfo">Order Information</string>
+    <string name="step_one_product_info">Product Info</string>
+    <string name="step_one_pricing_milestone">Pricing &amp; Milestones</string>
+    <string name="step_one_persentage">Percentage</string>
+    <string name="step_one_date">Date</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="unit_price">Unit Price:</string>
+    <string name="unit">Unit:</string>
+    <string name="total_product_price">Total Product Price:</string>
+    <string name="custom_services">Import\\Customer Service</string>
+    <string name="quality_services">Quality Inspection Service</string>
+    <string name="shipping_services">Shipping Service</string>
+    <string name="shipping_address">Shipping Address</string>
+
+    <!-- steptwo -->
+    <string name="step_two_request_verification">Customs Service</string>
+    <string name="company_verification">Company Verification Services</string>
+    <string name="services">Services</string>
+    <string name="confidentiality">Confidentiality</string>
+
+    <!-- steptwothree -->
+    <string name="step_two_three_request_verification">Inspection Service</string>
+    <string name="step_two_three_company_verification">Company Verification Services</string>
+
+    <!-- stepthree -->
+    <string name="step_three_shipping_info">Shipping Information</string>
+    <string name="step_three_shipping_cost">Shipping Cost</string>
+    <string name="step_three_carrier">Carrier</string>
+    <string name="step_three_cost">Cost</string>
+    <string name="step_three_delivery_time">Delivery Time</string>
+    <string name="step_three_seller_shippingmethod">Seller\s Shipping Method</string>
+    <string name="step_three_packaging">Packaging</string>
+    <string name="step_three_packaging_details">Packaging Details:</string>
+    <string name="step_three_delivery_details">Delivery Details:</string>
+
+    <!-- stepfour -->
+    <string name="step_four_payment">Payment</string>
+    <string name="title_activity_step_two_three">StepTwoThreeActivity</string>
+    <string name="add">Add</string>
+
+    <!-- stepfive -->
+    <string name="description">Description</string>
+    <string name="total_order_amount">Total Order Amount</string>
+    <string name="order_cost">Order Cost</string>
+    <string name="agency_cost">Agency Cost</string>
+    <string name="shipping_cost_text">Shipping Cost</string>
+    <string name="total_cost">Total Cost</string>
+
+    <!-- payment page -->
+    <string name="net_banking">Net Banking</string>
+    <string name="cancel">Cancel</string>
+    <string name="make_payment">Make Payment</string>
+    <string name="quotation_text">Quotation</string>
+    <string name="order">Order</string>
+    <string name="info_text">Get Info</string>
+    <string name="price_text">Price</string>
+
+    <!-- Dashboard -->
+    <string name="name">Name</string>
+    <string name="feedback_rating">Feedback Rating:</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="notifications">Notifications</string>
+    <string name="my_order">My Orders</string>
+    <string name="my_coupons">My Open Quotation</string>
+    <string name="order_awaiting_payment">Orders Awaiting Payment</string>
+    <string name="order_awaiting_shipment">Orders Awaiting Shipment</string>
+    <string name="goods_awaiting_confirmation">Goods Awaiting Confirmation</string>
+    <string name="leave_feedback">Leave Feedback</string>
+    <string name="to">To</string>
+    <string name="text_value2">Contact Person Name</string>
+    <string name="text_value3">Company Name Pvt., Ltd.,</string>
+    <string name="text_value4">Select Products Name</string>
+    <string name="text_value5">200 Pieces/Min.Order</string>
+    <string name="quantity">Quantity</string>
+    <string name="info">More Info:</string>
+    <string name="price">Price:</string>
+    <string name="pieces">150 Piece/Pieces</string>
+    <string name="subject">Subject:</string>
+    <string name="message">Messages:</string>
+    <string name="files">Attach Files</string>
+    <string name="doc">Attach Document</string>
+    <string name="me">Me</string>
+    <string name="request">Requests</string>
+
+    <!-- Quotation -->
+    <string name="contact_suplier">Contact Supplier</string>
+    <string name="hint_text">Enter the text</string>
+    <string name="optional_details">Optional Details</string>
+    <string name="number">10</string>
+    <string name="send">Send</string>
+    <string name="adding">&#43;</string>
+    <string name="subtract">&#45;</string>
+    <string name="please_sendme">Please send me</string>
+
+    <!-- GuestRegistration -->
+    <string name="register">Register</string>
+    <string name="otp">One Time Password</string>
+    <string name="msg_hint">Your message text here...</string>
+    <string name="message_text">Message</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="submit">Submit</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="successfull">Successfully</string>
+    <string name="sample_text">sent the one time password to your registered email.</string>
+    <string name="re_generate">Re-Generate OTP</string>
+
+    <!-- login page -->
+    <string name="email_address">E-MAIL ADDRESS</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="create_account">Create an account</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="new_user">New user?Register here</string>
+    <string name="str_view_more">View more...</string>
+    <!-- Home Screen -->
+    <string name="str_featured_categories">Featured Categories</string>
+    <string name="str_featured_products">Featured Products</string>
+    <string name="str_manufacturers">Manufacturers</string>
+    <string name="switch_user">Switch to Buyer Dashboard</string>
+
+    <!-- Place Order -->
+
+    <string name="shippingcart">Shipping Cart</string>
+    <string name="address">Address</string>
+    <string name="payment">Payment</string>
+    <string name="payment_info">Payment information</string>
+    <string name="unitprice">Unit Price</string>
+    <string name="quant">Quantity</string>
+    <string name="piece">Piece/Pieces</string>
+    <string name="subtotal">Subtotal</string>
+
+    <color name="new_green">#4DC98D</color>
+    <color name="text_green">#66D7A0</color>
+
+    <string-array name="nav_drawer_items">
+        <item>product</item>
+        <item>shipping</item>
+        <item>inspection</item>
+        <item>custom</item>
+        <item>E-credit</item>
+        <item>warehouse</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+
+    <array name="nav_drawer_icons">
+        <item>@raw/vs_product</item>
+        <item>@raw/vs_shipping</item>
+        <item>@raw/vs_inspection</item>
+        <item>@raw/vs_customs</item>
+        <item>@raw/vs_e_credit</item>
+        <item>@raw/vs_warehouse</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="manu">Manufacture Name Pvt., Ltd.,</string>
+    <string name="pay">You are Paying</string>
+    <string name="open_quote">Open Quote</string>
+    <string name="remove">Remove</string>
+
+    <!-- shipping create quotation -->
+    <string name="dhl_a">DHL Aviation express shipping</string>
+    <string name="subject_hint">Subject text Here</string>
+    <string name="service_type">Service type</string>
+    <string name="messagenew">Message:</string>
+    <string name="message_hint">Your Message text here....</string>
+    <string name="select_country">Select Country Name</string>
+    <string name="select_city">Select City</string>
+    <string name="shipping_from">Shipping From</string>
+    <string name="shipping_to">Shipping To</string>
+    <string name="additional_info">Additional Information</string>
+    <string name="length">Length (in) Width (in) Height (in)</string>
+    <string name="height">Height (in)</string>
+    <string name="width">Width (in)</string>
+    <string name="no_of_package">No. of Packages</string>
+    <string name="ship_date">Ship date</string>
+    <string name="pickup">Pickup</string>
+    <string name="dropoff">Dropoff</string>
+    <string name="attachment">Attachment</string>
+    <string name="weight">Weight</string>
+    <string name="from">From</string>
+    <string name="box_size">Box Size</string>
+    <string name="ship_type">Ship Type</string>
+
+    <!-- inspection request -->
+    <string name="contact_person_name">Contact Person Name</string>
+    <string name="icompany_name">INSPECTION COMPANY NAME</string>
+    <string name="subject_text">Subject Text Here...</string>
+    <string name="place_to_inspect">Place to inspect</string>
+    <string name="factory_name">Factory Name</string>
+    <string name="city">City</string>
+    <string name="street">Street Address</string>
+    <string name="type_industry">Type of industry</string>
+    <string name="inspector_type">Inspector type</string>
+    <string name="inspection_type">Inspection type</string>
+
+    <!-- Custom -->
+    <string name="clearing_agent">Guangdong ocean freight and china customs clearing agents</string>
+    <string name="sample">Sample Text</string>
+    <string name="category">Category</string>
+    <string name="subcategory">Sub category</string>
+    <string name="country_name">Country Name</string>
+    <string name="state_name">State Name</string>
+    <string name="company_name">Company Name</string>
+
+    <!-- warehouse -->
+    <string name="warehouse">Warehouse Form</string>
+    <string name="area_Requirment">Area requirement</string>
+    <string name="select_state">Select State Name</string>
+    <string name="pin">pin</string>
+    <string name="title_activity_shipping_form">ShippingFormActivity</string>
+    <string name="mazzan">Mezzanine Racking System for Warehouse </string>
+    <string name="warehouseloction">Warehouse Location</string>
+    <string name="citynew">City : </string>
+    <string name="location">Location</string>
+
+    <!-- trade manager popup -->
+    <string name="sel_prod">Select the product</string>
+    <string name="pname">Bluetooth Wrist Smart..</string>
+    <string name="mname">Manufacturer Company Name</string>
+    <string name="alert">Alert</string>
+    <string name="trade">Trade Manager</string>
+    <string name="orders">Orders</string>
+    <string name="inventory">Inventory</string>
+    <string name="channel">Channel</string>
+    <string name="warehse">Warehouse</string>
+    <string name="title_activity_create_channel">CreateChannelActivity</string>
+    <string name="title_activity_fulfilpopup">Fulfilpopup</string>
+    <string name="title_activity_selectwarehousepopup">Selectwarehousepopup</string>
+
+    <!-- channellist -->
+    <string name="selected">Channel name You Selected</string>
+    <string name="channel_name">Channel name here</string>
+    <string name="onlineshopping">Online Shopping</string>
+    <string name="title_activity_warehouselist">WarehouselistActivity</string>
+
+    <!-- Order List Heading -->
+    <string name="heading">Select Warehouse</string>
+    <string name="requirement">Requirement</string>
+    <string name="addqty">Add Qty</string>
+    <string name="oqtyreport">Order Report</string>
+    <string name="invenreport">Inventory Report</string>
+    <string name="title_activity_trade_alert">TradeAlertActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_alert_details">AlertDetailsActivity</string>
+
+    <!-- Inventory Details -->
+
+    <string name="mcompany_name">Manufacturer Company Name</string>
+    <!-- <string name="warehouse">Warehouses</string> -->
+    <string name="bangalore">Bangalore</string>
+    <string name="chennai">Chennai</string>
+    <string name="kolkota">Kolkatta</string>
+    <!-- <string name="piece">/piece</string> -->
+    <string name="total_qty">Total Inventory Qty</string>
+    <string name="update_inventory">Update Inventory</string>
+
+    <!-- Inventorylist -->
+
+    <string name="manufact_name">Manufacture Company Name</string>
+    <string name="stock_qty">Stock Qty : </string>
+    <!-- <string name="pieces"> / piece</string> -->
+    <string name="title_activity_order_list">OrderListActivity</string>
+    <string name="title_activity_create_ware_house">CreateWareHouseActivity</string>
+    <string name="title_activity_order">OrderActivity</string>
+    <string name="title_activity_warehousepopup">Warehousepopup</string>
+    <string name="title_activity_inventory_details">InventoryDetails</string>
+
+    <!-- warehouselist -->
+    <string name="wareselected">Warehouse name You Selected</string>
+    <string name="warehouse_name">Warehouse Name</string>
+    <string name="locationdetails">Location Details</string>
+    <string name="contact_no">Contact Mobile No.</string>
+    <string name="title_activity_inventorylist">InventorylistActivity</string>
+    <string name="selectwarehouse">Select a Warehouse</string>
+    <string name="warehouse_names">Warehouses</string>
+    <string name="qty">Qty</string>
+    <string name="total_quant">Total Qty</string>
+
+    <!-- Update Inventory -->
+
+    <string name="selectwhouse">Select ware house</string>
+    <string name="stockin">Stock in Chennai</string>
+    <string name="upload">Upload</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+
+    <!-- place order shipping -->
+    <string name="delivery_date">Delivery Date</string>
+    <string name="total_weight">Total Weight</string>
+    <string name="total_price">Total Price</string>
+    
+    <!-- common strings -->
+    <string name="best_price">Best Price</string>
+    <string name="currency">US$</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="cursor_hint">|</string>
+    <string name="we_provide">We provide</string>
+    <string name="milestone">Milestones</string>
+    <string name="measurement_divider">X</string>
+    <string name="documents">Documents</string>
+    <string name="order_number">OD No.</string>
+    <string name="Loading">Loading...</string>
+    
+    <!-- dashboard -->
+    <string name="view_quotes">View Quotes</string>
+    <string name="view_price">View Price Requests</string>
+    <string name="view_moreinfo">More Info Requests</string>
+    <string name="view_order">Order List</string>
+    <string name="thanks_text">Thanks for Placing Order with Verisupplier</string>
+    
+
+</resources>
